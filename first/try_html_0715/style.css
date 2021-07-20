@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	border: 0;
+	font-size: 16px;
+	line-height: 1.7;
+	outline: 0;
+	word-break: break-all;
+}
+
+/* micro clearfx */
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after { 
+	clear:　both;
+}
+
+.cf:after {
+	clear:both;
+}
+
+body {
+	background: #DCDCDC;
+}
+
+.box {
+	width: 980px;
+	margin: 100px auto 30px auto;
+	background: #FFF;
+	position: relative;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+header {
+	height: 100px;
+	background: #C22023;
+}
+
+/* ヘッダー */
+nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* ナビ */
+nav {}
+
+nav ul {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+nav li {
+	width: 25%;
+}
+
+nav li a {
+	background: red;
+	height: 50px;
+	border-right: solid 5px #AB3133;
+	display: block;
+	line-height: 50px;
+	text-align: center;
+}
+
+nav li a:hover {
+	background: blue;
+}
+
+nav li:nth-child(3) a {
+	background: yellow;
+}
+
+nav li:nth-child(odd) a {
+	background: pink;
+}
+
+nav li:nth-child(even) a {
+	background: green;
+}
+
+nav li:last-child a {
+	border: none;
+}
+
+.layout-box {
+	margin: 30px 0;
+	display: grid;
+	grid-template-columns: 1fr 200px;
+	grid-column-gap: 60px;
+}
+
+/* メイン */
+.main-box {
+	height: 3500px;
+	background: blue;
+}
+
+.sub-box {
+	height: 3500px;
+	position: relative;
+}
+
+.sub-box .sticky {
+	background: yellow;
+	position: sticky;
+	top: 100px;
+	left: 0;
+}
+
+footer {
+	background: orange;
+}
