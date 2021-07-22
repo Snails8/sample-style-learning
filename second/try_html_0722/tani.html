@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+	<style>
+		body {
+			padding: 0 10% 10% 10%;
+		}
+		
+		p {
+			font-size: 22px;
+		}
+	</style>
+	<h1>html/css勉強会 vol.2　横並びのデザインする方法4つと単位について</h1>
+	<div>
+		<h2>横並びは＜flex＞か＜grid＞。＜float＞＜table＞はすでに過去の遺産。</h2>
+		<p>
+			イメージ的には……<br>
+			＜grid＞・・・令和。<br>
+			＜flex＞・・・平成。<br>
+			＜float＞・・・大正。<br>
+			＜table＞・・・旧石器時代。<br><br>
+			令和仕様に対応してないブラウザもあるので、案件によって何を使うか考えましょう。
+		</p>
+	</div>
+	<div>
+		<h3>＜table＞</h3>
+		<p>
+			今じゃ考えられないけど、旧石器時代では横並びする技術がなくてレイアウトを＜table＞のみで行っていた！また、メルマガなんかは今でも＜table＞で組む場合もある。<br>
+			現在の＜table＞の使い所は、表の部分（料金表、会社概要など）。
+		</p>
+	</div>
+	<div>
+		<h3>＜float＞</h3>
+		<p>
+			＜table＞の次の横並びのためのタグだが2013年(たぶん)くらいまでは主流だった。かなり繊細なタグで、正しく記述しないと一気にガチャ崩れを起こす。＜flex＞　の台頭で、今やメルマガくらいしか使う機会はない。
+		</p>
+	</div>
+	<div>
+		<h3>＜flex＞</h3>
+		<p>
+			＜float＞の難所を全て克服したかのような神タグ。＜flex＞の出現でウェブデザインのやりやすさが爆上がりした。ぶっちゃけ＜flex＞だけでレイアウトできます。
+		</p>
+	</div>
+	<div>
+		<h3>＜grid＞</h3>
+		<p>
+			＜flex＞に繼ぐ次世代タグ。
+			Gridデザインは、見るからに難しい！<a href="https://layout.bradwoods.io/customize" target="_blank">お役たちツール</a>がたくさんできてしまうほどに……<br>
+			最近じゃページレイアウトを＜grid＞で組み簡単にレスポンシブ設計し、細かい部品は＜flex＞で組むのが主流のよう。
+			<a href="https://css-generator.netlify.app/layout-grid-items/">こっちはGridだけじゃなくflexやその他のジェネレータも含まれている。</a>
+		</p>
+	</div>
+	<br><br><br><br>
+	<div>
+		<h2>htmlで使用する単位</h2>
+		<p>
+			cssでは色々な単位を駆使してデザインしていきます。
+		</p>
+		<h3>px,em,rem,%,vw,vh・・・意味不明。それぞれの違いと使い所は？</h3>
+		<p>
+			＜px＞・・・絶対値<br>
+			＜em＞・・・相対値。親要素から計算<br>
+			＜rem＞・・・相対値。rootから計算<br>
+			＜%＞・・・相対値。親要素から計算<br>
+			＜vw＞・・・相対値。ビューポートの横幅から計算。レスポンシブデザインで使用<br>
+			＜vh＞・・・相対値。ビューポートの縦幅から計算。レスポンシブデザインで使用<br>
+		</p>
+	</div>
+</body>
+</html>

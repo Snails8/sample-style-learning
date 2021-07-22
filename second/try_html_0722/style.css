@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dl ,dd , dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	line-height: 1.7;
+	outline: 0;
+	word-break: break-all;
+}
+
+/* micro clearfx */
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after { 
+	clear:　both;
+}
+
+.cf:after {
+	clear:both;
+}
+
+body {
+	background: #DCDCDC;
+}
+
+.box {
+	width: 980px;
+	margin: 100px auto 30px auto;
+	background: #FFF;
+	position: relative;
+}
+
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+header {
+	height: 100px;
+	border: solid 1px #CCC;
+}
+
+/* ヘッダー */
+nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* ナビ */
+nav {}
+
+nav ul {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+nav li {
+	width: 25%;
+}
+
+nav li a {
+	background: red;
+	height: 50px;
+	border-right: solid 5px #AB3133;
+	display: block;
+	line-height: 50px;
+	text-align: center;
+}
+
+nav li a:hover {
+	background: blue;
+}
+
+nav li:nth-child(3) a {
+	background: yellow;
+}
+
+nav li:nth-child(odd) a {
+	background: pink;
+}
+
+nav li:nth-child(even) a {
+	background: green;
+}
+
+nav li:last-child a {
+	border: none;
+}
+
+.layout-box {
+	margin: 30px 0;
+	display: grid;
+	grid-template-columns: 1fr 200px;
+	grid-column-gap: 60px;
+}
+
+/* ------------- main box -------------*/
+.main-box {
+	padding: 0 20px;
+	height: 3500px;
+}
+
+.content1,
+.content2,
+.content3,
+.content4 {
+	margin-bottom: 30px;
+}
+
+/* float */
+.floatbox {
+	background: #CDE;
+}
+
+.floatbox::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.floatbox p {
+	float: left;
+}
+
+.item1 {
+	margin-right: 20px;
+}
+
+.item2 {
+	margin-right: 30px;
+}
+
+.item3 {
+	background: red;
+}
+
+
+.content3 {
+	background: #fde;
+}
+
+.content3 ol {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.content3 li {
+	width: 20%;
+	margin: 0 10px 20px 0;
+	background: red;
+}
+
+.content4 {
+	background: #EFD;
+}
+.content4 ol {
+	display: grid;
+	grid-template-columns: 100px 1fr 20px 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+}
+
+.content4 li {
+	background: blue;
+}
+
+/* tani */
+html {
+	font-size: 30px;
+}
+
+.font-tani {
+	margin-top: 3rem;
+	padding: 1rem;
+	background: #EFEFEF;
+}
+
+.font-tani {
+}
+
+.oya {
+	font-size: 10px;
+}
+
+.font-tani .ex1 {
+	font-size: 200%;
+}
+
+.font-tani .ex2 {
+	font-size: 3em;
+}
+
+.font-tani .ex3 {
+	font-size: 2rem;
+}
+
+.font-tani .ex4 {
+	font-size: 2vw;
+}
+
+.layout-tani {
+	width: 500px;
+	background: yellow;
+}
+
+.layout-tani .ex1 {
+	width: 30%;
+	height: 300px;
+	background: red;
+}
+
+.layout-tani .ex2 {
+	width: 70vw;
+	height: 70vh;
+	background: #FDE;
+}
+
+/* ------------- sub box -------------*/
+.sub-box {
+	height: 3500px;
+	position: relative;
+}
+
+.sub-box .sticky {
+	border: solid 1px #CCC;
+	position: sticky;
+	top: 100px;
+	left: 0;
+}
+
+/* ------------- footer -------------*/
+footer {
+	background: orange;
+}
